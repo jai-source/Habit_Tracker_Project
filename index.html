@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Habit Tracker</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- TASK 1:
+       Create a new file called style.css
+       Link it here using external CSS -->
+      
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header id="header">
+    <h1 class="title">Habit Tracker</h1>
+
+    <!-- TASK 2:
+         Style this navigation using:
+         - flexbox
+         - background color
+         - spacing -->
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li>Home</li>
+        <li>Habits</li>
+        <li>Stats</li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main class="main-container">
+
+    <!-- TASK 3:
+         Change font size and color of headings -->
+    <section id="add-habit">
+      <h2>Add New Habit</h2>
+
+      <!-- TASK 4:
+           Style form using:
+           - width
+           - padding
+           - margin -->
+      <form class="habit-form">
+        <input type="text" placeholder="Habit Name">
+        <select>
+          <option>Daily</option>
+          <option>Weekly</option>
+        </select>
+        <button>Add Habit</button>
+      </form>
+    </section>
+
+    <!-- TASK 5:
+         Create habit cards layout using FLEXBOX -->
+    <section id="habit-list">
+      <h2>Your Habits</h2>
+
+      <div class="habits-container">
+        <div class="habit-card">
+          <h3>Read 20 minutes</h3>
+          <p>Streak: 3 days</p>
+          <button>Done</button>
+        </div>
+
+        <div class="habit-card">
+          <h3>Exercise</h3>
+          <p>Streak: 5 days</p>
+          <button>Done</button>
+        </div>
+
+        <div class="habit-card">
+          <h3>Meditation</h3>
+          <p>Streak: 2 days</p>
+          <button>Done</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TASK 6:
+         Use GRID to style stats section -->
+    <section id="stats">
+      <h2>Your Progress</h2>
+
+      <div class="stats-grid">
+        <p>Total Habits: 3</p>
+        <p>Completed Today: 1</p>
+        <p>Best Streak: 7 days</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <!-- TASK 7:
+       Center footer text and add background color -->
+  <footer id="footer">
+    <p>Habit Tracker Project</p>
+    <p>Built during Web Development Bootcamp</p>
+  </footer>
+
+</body>
+</html>
