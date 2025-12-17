@@ -1,188 +1,106 @@
-/* ===== BASIC RESET ===== */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f4f6f8;
+/* =========== RESET =============*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ===== HEADER ===== */
+/* =========== HEADER =============*/
 #header {
-  background-color: #314e6b;
-  padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+}
+    
+    
+    .title {
+        margin-bottom: 10px;
+        text-align: center;
 }
 
-.title {
-  color: white;
-  text-align: center;
-}
-
-/* ===== NAVBAR (FLEXBOX) ===== */
+/* TASK 2: Navbar Flexbox */
 .navbar {
-  margin-top: 10px;
+    display: flex;
+    justify-content: center;
 }
-
-.nav-list {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding: 0;
+.navlist {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
 .nav-list li {
-  color: white;
-  cursor: pointer;
+    cursor: pointer;
+    font-weight: bold;
 }
 
-/* ===== MAIN CONTAINER ===== */
+/* =========== MAIN CONTENT =============*/
 .main-container {
-  padding: 20px;
+    padding: 20px;
 }
 
-/* ===== ADD HABIT SECTION ===== */
-#add-habit h2 {
-  color: #34495e;
+/* TASK 3: Heading style */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
 }
 
+/* TASK 4: Habit Form Styles */
 .habit-form {
-  display: flex;
-  gap: 10px;
-  margin-top: 10px;
+    width: 300px;
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: bluelightgray;
+    border-radius: 5px;
 }
+
 
 .habit-form input,
-.habit-form select {
-  padding: 8px;
-  width: 200px;
-}
-
+.habit-form select,
 .habit-form button {
-  padding: 8px 15px;
-  background-color: #27ae60;
-  color: white;
-  border: none;
-  cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
 }
 
-/* ===== HABIT LIST (FLEXBOX) ===== */
-.habits-container {
-  display: flex;
-  gap: 20px;
-  margin-top: 15px;
+/* =========== TASK 5: Habit cards FLEXBOX =============*/
+.main-container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .habit-card {
-  background-color: white;
-  padding: 15px;
-  width: 200px;
-  border-radius: 8px;
-}
-
-.habit-card h3 {
-  color: #2c3e50;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    width: 200px;
 }
 
 .habit-card button {
-  margin-top: 10px;
-  padding: 5px 10px;
+    width: 100%;
+    margin-top: 10px;
 }
 
-/* ===== STATS (GRID) ===== */
+/* =========== TASK 6: STATS GRID ============= */
 .stats-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    background-color: #fff3e0;
+    padding: 20px;
+    border-radius: 5px;
 }
 
-.stats-grid p {
-  background-color: white;
-  padding: 15px;
-  text-align: center;
-  border-radius: 6px;
-}
-
-/* ===== FOOTER ===== */
+/* ===========  TASK 7:FOOTER ============= */
 #footer {
-  background-color: #2c3e50;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 30px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
 }
 
-/* ================================================= */
-/* ============ DAY 2: POLISH & INTERACTION ========= */
-/* ================================================= */
-
-/* Smooth transitions */
-button,
-.habit-card,
-.nav-list li {
-  transition: 0.8s ease;
-}
-
-/* Navbar hover */
-.nav-list li:hover {
-  text-decoration: underline;
-}
-
-/* Button hover */
-button:hover {
-  opacity: 0.2;
-}
-
-/* Habit card hover */
-.habit-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-/* Form focus states */
-input:focus,
-select:focus {
-  outline: none;
-  border: 2px solid #27ae60;
-}
-
-/* Rounded buttons */
-button {
-  border-radius: 5px;
-}
-
-/* ================================================= */
-/* ============ DAY 2: RESPONSIVE DESIGN ============ */
-/* ================================================= */
-
-@media (max-width: 768px) {
-
-  /* Navbar stacks */
-  .nav-list {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  /* Form becomes vertical */
-  .habit-form {
-    flex-direction: column;
-  }
-
-  .habit-form input,
-  .habit-form select {
-    width: 100%;
-  }
-
-  /* Habit cards stack */
-  .habits-container {
-    flex-direction: column;
-  }
-
-  .habit-card {
-    width: 100%;
-  }
-
-  /* Stats grid becomes single column */
-  .stats-grid {
-    grid-template-columns: 1fr;
-  }
-}
