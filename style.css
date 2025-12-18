@@ -1,0 +1,106 @@
+/* =========== RESET =============*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========== HEADER =============*/
+#header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+}
+    
+    
+    .title {
+        margin-bottom: 10px;
+        text-align: center;
+}
+
+/* TASK 2: Navbar Flexbox */
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+.navlist {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-list li {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* =========== MAIN CONTENT =============*/
+.main-container {
+    padding: 20px;
+}
+
+/* TASK 3: Heading style */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* TASK 4: Habit Form Styles */
+.habit-form {
+    width: 300px;
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: bluelightgray;
+    border-radius: 5px;
+}
+
+
+.habit-form input,
+.habit-form select,
+.habit-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* =========== TASK 5: Habit cards FLEXBOX =============*/
+.main-container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.habit-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    width: 200px;
+}
+
+.habit-card button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* =========== TASK 6: STATS GRID ============= */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    background-color: #fff3e0;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* ===========  TASK 7:FOOTER ============= */
+#footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+}
+
